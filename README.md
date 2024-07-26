@@ -10,7 +10,7 @@ Obviously, you'll need your system to both support Wake-on-LAN and have it activ
 
 ## Use Case
 
-The intended purpose of this plugin is save on electrical usage. Run some type of automatic shutdown program/plugin on the host so that it doesn't use much power in times of frequent inactivity. Then run the proxy server on something much more lightweight such as raspberry pi 4~5. This plugin will then turn the host back on when there is finally some player activity. 
+The intended purpose of this plugin is save on electrical usage. Run some type of automatic shutdown program/plugin on the host so that it doesn't use much power in times of frequent inactivity. Then run the proxy server on something much more lightweight such as raspberry pi 4~5. This plugin will then turn the host back on when there is finally some player activity. If your server is being used 24/7, this project will do practically nothing. 
 
 ## Useful links
 
