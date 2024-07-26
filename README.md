@@ -1,4 +1,4 @@
-#  Wake-on-LAN Plugin for Bungeechord
+#  Wake-on-LAN Plugin for BungeeCord
 
 ## How it Works
 
