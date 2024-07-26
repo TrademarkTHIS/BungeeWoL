@@ -15,4 +15,5 @@ The intended purpose of this plugin is save on electrical usage. Run some type o
 ## Useful links
 
 [Limbo fallback server](https://www.spigotmc.org/resources/limbo-standalone-server-lightweight-solution-for-afk-or-waiting-rooms-in-your-server-network.82468/) deliberately avoids handling as many packets as possible to decrease power and memory usage.
+
 [Hibernate Plugin](https://www.spigotmc.org/resources/hibernate.4441/) lowers the CPU usage of the host server when there is no player activity.
