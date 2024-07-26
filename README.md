@@ -1,4 +1,4 @@
-# Minecraft Server Wake-on-LAN Plugin
+#  Wake-on-LAN Plugin for Bungeechord
 
 ## How it Works
 
