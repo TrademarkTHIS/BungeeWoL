@@ -7,3 +7,12 @@ When a player connects to your proxy server, this plugin sends a ping to your ta
 ## Setup Notes
 
 Obviously, you'll need your system to both support Wake-on-LAN and have it actively turned on, both through your BIOS and your operating system if necessary. The port in the config file will be used for both the status check of the target host and sending the WoL packet. That port must be actively listening, and you will probably need to define a new Inbound Rule on your firewall for that specific port. For my testing, I used Server Message Block (SMB) port 445.
+
+##Use Case
+
+The intended purpose of this plugin is save on electrical usage. Run some type of automatic shutdown program/plugin on the host so that it doesn't use much power in times of frequent inactivity. Then run the proxy server on something much more lightweight such as raspberry pi 4~5. This plugin will then turn the host back on when there is finally some player activity. 
+
+##Useful links
+
+[Limbo fallback server](https://www.spigotmc.org/resources/limbo-standalone-server-lightweight-solution-for-afk-or-waiting-rooms-in-your-server-network.82468/) deliberately avoids handling as many packets as possible to decrease power and memory usage.
+[Hibernate Plugin](https://www.spigotmc.org/resources/hibernate.4441/) lowers the CPU usage of the host server when there is no player activity.
