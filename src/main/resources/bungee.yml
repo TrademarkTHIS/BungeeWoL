@@ -1,0 +1,4 @@
+name: WakeOnLan
+version: '${project.version}'
+main: arcademadness.wakeonlan.WakeOnLan
+description: Wakes a computer by sending a WoL signal when a player connects.
