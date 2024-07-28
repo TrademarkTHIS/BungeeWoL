@@ -15,7 +15,7 @@ Obviously, you'll need your system to both support Wake-on-LAN and have it activ
 
 ## Useful links
 
-[How to setup Wake-on-LAN](https://www.asus.com/support/faq/1045950/) Official ASUS guide on setting up Wake-on-LAN
+[How to setup Wake-on-LAN](https://www.asus.com/support/faq/1045950/) Official ASUS guide for setting up Wake-on-LAN
 
 [Limbo fallback server](https://www.spigotmc.org/resources/limbo-standalone-server-lightweight-solution-for-afk-or-waiting-rooms-in-your-server-network.82468/) deliberately avoids handling as many packets as possible to decrease power and memory usage (perfect for raspberry pi).
 
