@@ -2,7 +2,7 @@
 
 ## Why do this?
 
-The intended purpose of this plugin is save on electrical usage. To run some type of automatic shutdown program/plugin on the host so that it doesn't use much power in times of frequent inactivity. Then run the proxy server on something much more lightweight such as raspberry pi 4~5. This plugin will then send a Wake-on-LAN packet the host server, turning it back on because a player has requested to join. If your server is being used 24/7, this project will do practically nothing. 
+The intended purpose of this plugin is save on electrical usage. To run some type of automatic shutdown program/plugin on the host so that it doesn't use much power in times of frequent inactivity. The proxy server will be run on something much more lightweight such as raspberry pi 4~5. Then this plugin will then send a Wake-on-LAN packet the host server, turning it back on once a player wishes to play. If your server is being used 24/7, this project will do practically nothing. 
 
 ## How it Works
 
