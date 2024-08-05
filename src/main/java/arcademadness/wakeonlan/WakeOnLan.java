@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 public final class WakeOnLan extends Plugin implements Listener{
 
     private String serverIP;
+    private String broadcastIP;
     private int serverPort;
     private String serverMAC;
     private int timeout;
@@ -44,6 +45,8 @@ public final class WakeOnLan extends Plugin implements Listener{
                 Map<String, Object> server = (Map<String, Object>) config.get("server");
                 if (server != null) {
                     serverIP = (String) server.get("ip");
+
+                    broadcastIP = (String) server.get("broadcastip");
 
                     Object port = server.get("port");
                     if (port instanceof Number) {
@@ -83,6 +86,7 @@ public final class WakeOnLan extends Plugin implements Listener{
             StringBuilder yamlBuilder = new StringBuilder();
             yamlBuilder.append("server:\n");
             yamlBuilder.append("  ip: 192.168.1.100\n");
+            yamlBuilder.append("  broadcastip: 255.255.255.255\n");
             yamlBuilder.append("  ports: 8\n");
             yamlBuilder.append("  mac: 00:1A:2B:3C:4D:5E");
             yamlBuilder.append("  timeout: 5000");
@@ -104,7 +108,7 @@ public final class WakeOnLan extends Plugin implements Listener{
 
             if (!isServerOnline(serverIP, serverPort)) {
                 try {
-                    sendWakeOnLanPacket(serverMAC, serverIP, serverPort);
+                    sendWakeOnLanPacket(serverMAC, broadcastIP, serverPort);
                 } catch (Exception e) {
                     //nothing
                 }
