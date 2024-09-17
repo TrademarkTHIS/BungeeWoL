@@ -10,7 +10,7 @@ When a player connects to your proxy server, this plugin sends a ping to your ta
 
 ## Setup Notes
 
-Obviously, you'll need your system to both support Wake-on-LAN and have it actively turned on, both through your BIOS and your operating system if necessary. The port in the config file will be used for both the status check of the target host and sending the WoL packet. That port must be actively listening, and you will probably need to define a new inbound rule on your firewall for that specific port. For my testing, I used Server Message Block (SMB) port 445. I tested this project with two computers, both running their operating systems on SSDs. If you're not running an SSD, you will probably be disappointed by how long it takes to actually connect to the host.
+Obviously, you'll need your system to both support Wake-on-LAN and have it actively turned on, both through your BIOS and your operating system if necessary. The port in the config file will be used for both the status check of the target host and sending the WoL packet. That port must be actively listening, and you will probably need to define a new inbound rule on your firewall for that specific port. For my testing, I used Server Message Block (SMB) port 445. I tested this project with two computers, both running their operating systems on SSDs. If you're not running an SSD, you will probably be disappointed by how long it takes for your host to boot up...
 
 ## Useful Links
 
